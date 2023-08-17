@@ -1,4 +1,7 @@
 ### 在wsl下可以直接编译c语言
+wsl.exe  开启wsl
+wsl --shutdown 关闭wsl
+这两行命令前提是再winslow的dos窗口下执行
 
 1，新建hello.cpp文件
 
