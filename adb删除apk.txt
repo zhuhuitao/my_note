@@ -1,0 +1,24 @@
+ActionsTool 控制空调相关
+
+WakeManager 操作本地音乐，视频等功能
+
+
+
+lsec王波 10:07:27
+su
+
+lsec王波 10:07:37
+mount -o rw,remount /fem
+
+lsec王波 10:07:47
+cd /oem/app
+
+lsec王波 10:08:02
+rm -r xxxxcarlink  
+
+
+
+//t10
+
+su
+mount -o rw,remount /oem
