@@ -1,0 +1,19 @@
+要通过 ADB 查看 Android 设备是 32 位还是 64 位，你可以使用以下命令来获取系统信息：
+
+sh
+adb shell getprop ro.product.cpu.abi
+这个命令会返回设备的 CPU 架构信息。ro.product.cpu.abi 属性表示设备的主 ABI（Application Binary Interface），即应用程序二进制接口。它会告诉你设备支持的主要指令集架构。
+
+常见的返回值包括：
+
+armeabi-v7a：32 位 ARM 架构
+arm64-v8a：64 位 ARM 架构
+x86：32 位 x86 架构
+x86_64：64 位 x86 架构
+请注意，有些设备可能支持多种架构，ro.product.cpu.abi 只返回主要的 ABI。如果你想要获取设备支持的所有 ABI 列表，可以使用以下命令：
+
+sh
+adb shell getprop ro.product.cpu.abilist
+这将返回一个以逗号分隔的 ABI 列表，列表中的第一个 ABI 是主要的 ABI，其余的 ABI 是设备支持的其他 ABI。
+
+通过检查这些属性，你可以确定你的 Android 设备是 32 位还是 64 位。
