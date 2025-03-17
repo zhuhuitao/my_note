@@ -1,0 +1,5 @@
+//过滤标签
+adb shell logcat -s atoto_uvc >>C:\Users\Hello\Desktop\uvc\log.txt
+
+//抓对应包名日志
+adb logcat | grep com.atoto.usbdemo > C:\Users\Hello\Desktop\uvc\uvclog.txt
